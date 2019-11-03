@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class HandleDropbox {
+public class HandleDropDownbox {
 
 	public static void main(String[] args) {
 
@@ -13,7 +13,7 @@ public class HandleDropbox {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		
-		//handle drop box
+		//handle dropdown box
 		Select select = new Select(driver.findElement(By.id("day")));
 		select.selectByVisibleText("10");
 		
